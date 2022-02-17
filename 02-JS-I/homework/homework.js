@@ -171,7 +171,7 @@ function esPositivo(numero) {
   } else if (numero > 0){
     return "Es positivo";
   } else {
-    return "Es positivo";
+    return "Es negativo";
   }
 }
 
@@ -194,7 +194,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return ('Hola' + nombre + '!');
+  return ('Hola' + ' ' + nombre + '!');
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -234,11 +234,10 @@ function esVocal(letra){
   //Escribe tu código aquí
   if (letra.lenght > 1){
     return "Dato incorrecto";
-    if (letra == 'a'|| letra == 'e'|| letra == 'i'|| letra == 'o'|| letra =='u'){
-      return "Es vocal";
-    } else {
-      return "Dato incorrecto";
-    }
+  } else if (letra == 'a'|| letra == 'e'|| letra == 'i'|| letra == 'o'|| letra =='u'){
+    return "Es vocal";
+  } else {
+    return "Dato incorrecto";
   }
 }
 
